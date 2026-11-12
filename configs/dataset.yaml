@@ -1,0 +1,8 @@
+dataset:
+  sd302e: datasets/raw/SD302e/original
+  sd302b: datasets/raw/SD302b/original
+  processed: datasets/processed
+  image_size: 224
+  train_ratio: 0.8
+  validation_ratio: 0.1
+  test_ratio: 0.1

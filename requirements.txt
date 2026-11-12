@@ -1,0 +1,11 @@
+transformers
+torchvision
+Pillow
+numpy
+pandas
+opencv-python
+scikit-image
+matplotlib
+tqdm
+PyYAML
+pytest

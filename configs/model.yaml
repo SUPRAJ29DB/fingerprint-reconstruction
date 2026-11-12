@@ -1,0 +1,7 @@
+model:
+  name: ForensicVLM
+  clip_model: openai/clip-vit-base-patch16
+  image_size: 224
+  hidden_dim: 768
+  attention_heads: 8
+  decoder: unet
