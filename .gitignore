@@ -1,9 +1,24 @@
 __pycache__/
 *.py[cod]
-.venv/
-.env
-.ipynb_checkpoints/
-checkpoints/
-experiments/
+.pytest_cache/
+.idea/
+.vscode/
+
+# Ignore all dataset images, generated masks, and large CSVs recursively
 datasets/raw/
 datasets/processed/
+datasets/annotations/*.csv
+test_samples/
+
+# Ignore all model weights and binaries anywhere in the repo
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.tar
+*.gz
+*.zip
+
+# Ignore epoch-by-epoch training snapshots, keep only final paper figures
+reports/figures/epoch_*.png

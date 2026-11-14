@@ -1,27 +1,14 @@
-
-# Vision-Language Model
 transformers>=4.40.0
-timm>=0.9.16
-einops>=0.7.0
-
-# Diffusion and training utilities
 diffusers>=0.27.0
 accelerate>=0.29.0
-
-# Image processing
+timm>=0.9.16
 opencv-python-headless>=4.9.0
 scikit-image>=0.22.0
 scipy>=1.12.0
 albumentations>=1.4.0
-Pillow>=10.0.0
-
-# Data processing
-numpy
-pandas>=2.2.0
-
-# Utilities
 pyyaml>=6.0.1
+pandas>=2.2.0
 tqdm>=4.66.0
-
-# Testing
+einops>=0.7.0
 pytest
+streamlit
