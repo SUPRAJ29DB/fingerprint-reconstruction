@@ -1,24 +1,74 @@
+# ==========================================
+# FORENSICVLM - GIT IGNORE
+# ==========================================
+
+# 1. Complete fingerprint datasets (40GB+)
+datasets/**
+
+# Keep annotation CSV files
+!datasets/annotations/
+!datasets/annotations/**
+
+# Explicit dataset exclusions
+datasets/sd302e/
+datasets/sd302b/
+datasets/raw/
+datasets/processed/
+datasets/compressed/
+
+# 2. Model checkpoints and weights
+checkpoints/
+experiments/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.onnx
+*.h5
+*.keras
+*.engine
+
+# 3. Python cache
 __pycache__/
+**/__pycache__/
 *.py[cod]
-.pytest_cache/
+*$py.class
+
+# 4. Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# 5. Jupyter
+.ipynb_checkpoints/
+
+# 6. Logs and temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# 7. IDE settings
 .idea/
 .vscode/
 
-# Ignore all dataset images, generated masks, and large CSVs recursively
-datasets/raw/
-datasets/processed/
-datasets/annotations/*.csv
-test_samples/
+# 8. Build files
+build/
+dist/
+*.egg-info/
 
-# Ignore all model weights and binaries anywhere in the repo
-checkpoints/
-*.pt
-*.pth
-*.bin
-*.safetensors
-*.tar
-*.gz
-*.zip
+# 9. Generated outputs
+outputs/
+predictions/
+runs/
+wandb/
 
-# Ignore epoch-by-epoch training snapshots, keep only final paper figures
-reports/figures/epoch_*.png
+# 10. Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# 11. OS files
+.Trash-*
